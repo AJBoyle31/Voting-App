@@ -10,12 +10,21 @@ var app = express();
 require('dotenv').load();
 require('./app/config/passport')(passport);
 
+//will be using handlebars
+var handlebars = require('express-handlebars').create({defaultLayout: 'main'});
+
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
+
+//connect to database. need to set up for mlabs database. 
+//url is in mongopass.js
 mongoose.connect(process.env.MONGO_URI);
 
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));
 app.use('/common', express.static(process.cwd() + '/app/common'));
 
+//secret needs to be changed
 app.use(session({
 	secret: 'secretClementine',
 	resave: false,
@@ -25,7 +34,11 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 routes(app, passport);
+
+
+
 
 var port = process.env.PORT || 8080;
 app.listen(port,  function () {
