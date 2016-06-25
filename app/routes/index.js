@@ -12,8 +12,17 @@ module.exports = function (app, passport) {
 			res.redirect('/login');
 		}
 	}
+	
+	//will call the getPolls function if the polls partials function is on the page being rendered
+	//need to create a getPolls funciton which will access the database and load each of the polls on the database
+	//this will happen automatically on page load so do not need to change clickHandler or clickController
+	app.use(function(req, res, next){
+    	if(!res.locals.partials) res.locals.partials = {};
+    	res.locals.partials.polls = getPolls();
+    	next();
+	});
 
-	var clickHandler = new ClickHandler();
+	var clickHandler = new ClickHandler();	
 	
 	//when logged in, you get the home screen
 	app.route('/')

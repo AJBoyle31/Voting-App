@@ -1,0 +1,35 @@
+figure out what happens when you click login with github
+
+database scheme
+    username: testuser
+    polls
+        poll name: example 
+        poll options: [a, b, c]
+        poll options count: [1, 2, 3]
+        
+navbar when logged in will have the following options
+    Home
+    My Polls
+    New Polls
+    Username
+
+set up html for pages
+    login 
+    home
+        a list of all polls
+    my polls
+        shows all polls made by user
+        has a link to make a new poll
+    new poll
+        asks user to enter a poll name in one box
+        in a separate box asks user to list the options
+    poll layout
+        poll title
+        options to vote for
+        submit button to vote
+        share on twitter button
+        option to delete the poll
+        graph displaying poll
+    profile
+    
+    
