@@ -3,6 +3,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+
+//maybe need two new Schemas? var user and var poll?
+
+
 var User = new Schema({
 	github: {
 		id: String,
@@ -10,8 +14,10 @@ var User = new Schema({
 		username: String,
       publicRepos: Number
 	},
-   nbrClicks: {
-      clicks: Number
+   polls: {
+      name: String,
+      options: Array,
+      votes: Array
    }
 });
 
