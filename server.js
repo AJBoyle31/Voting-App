@@ -5,6 +5,7 @@ var routes = require('./app/routes/index.js');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var session = require('express-session');
+var obtainurl = require('./mongopass.js');
 
 var app = express();
 require('dotenv').load();
@@ -18,7 +19,8 @@ app.set('view engine', 'handlebars');
 
 //connect to database. need to set up for mlabs database. 
 //url is in mongopass.js
-mongoose.connect(process.env.MONGO_URI);
+var url = obtainurl.getURL();
+mongoose.connect(url);
 
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));

@@ -1,3 +1,5 @@
+//this will need to be updated for polling voting
+
 'use strict';
 
 var Users = require('../models/users.js');
