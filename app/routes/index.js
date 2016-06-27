@@ -22,6 +22,7 @@ module.exports = function (app, passport) {
     	next();
 	});
 
+	//what is this?
 	var clickHandler = new ClickHandler();	
 	
 	//when logged in, you get the home screen

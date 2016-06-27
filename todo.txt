@@ -33,8 +33,14 @@ how do i save the polls in the database? do i create a polls.js similar to users
     added polls.js. not sure completely how to incorporate it
 
 database scheme?
-    username: testuser
-    polls
-        poll name: example 
-        poll options: [a, b, c]
-        poll options count: [1, 2, 3]
+        polls { 
+            "_id": 1,
+            "username": testuser,
+            "name": example
+            "choices": [
+                { "option" : a, "votes": 3 },
+                { "option" : b, "votes": 5 }
+            ]
+            
+            
+    
