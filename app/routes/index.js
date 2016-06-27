@@ -2,6 +2,7 @@
 
 var path = process.cwd();
 var ClickHandler = require(path + '/app/controllers/clickHandler.server.js');
+var getPolls = require(path + '/app/controllers/polls.partials.js');
 
 module.exports = function (app, passport) {
 
@@ -18,7 +19,7 @@ module.exports = function (app, passport) {
 	//this will happen automatically on page load so do not need to change clickHandler or clickController
 	app.use(function(req, res, next){
     	if(!res.locals.partials) res.locals.partials = {};
-    	res.locals.partials.polls = getPolls();
+    	res.locals.partials.polls = getPolls.returnPolls();
     	next();
 	});
 

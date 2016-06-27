@@ -1,17 +1,13 @@
 figure out what happens when you click login with github
 
         
-navbar when logged in will have the following options - DONE
-    Home
-    My Polls
-    New Polls
-    Username
 
 set up html for pages
     login
         a list of all polls
     home
         a list of all polls
+        links to my polls and new polls
     my polls
         shows all polls made by user
         has a link to make a new poll
@@ -32,7 +28,11 @@ update clickHandler.server.js to handle voting buttons
 how do i save the polls in the database? do i create a polls.js similar to users.js?
     added polls.js. not sure completely how to incorporate it
 
-database scheme?
+            
+            
+COMPLETED
+
+database scheme - what I have set up right now
         polls { 
             "_id": 1,
             "username": testuser,
@@ -41,6 +41,11 @@ database scheme?
                 { "option" : a, "votes": 3 },
                 { "option" : b, "votes": 5 }
             ]
-            
-            
+
+navbar when logged in will have the following options - DONE
+    Home
+    My Polls
+    New Polls
+    Username
+
     
