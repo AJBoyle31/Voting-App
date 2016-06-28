@@ -19,8 +19,9 @@ app.set('view engine', 'handlebars');
 
 //connect to database. need to set up for mlabs database. 
 //url is in mongopass.js
-var url = obtainurl.getURL();
+var url = obtainurl.getUrl();
 mongoose.connect(url);
+//mongoose.connect('mongodb://localhost:27017/clementinejs');
 
 app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
 app.use('/public', express.static(process.cwd() + '/public'));
