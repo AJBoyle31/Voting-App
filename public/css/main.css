@@ -1,9 +1,22 @@
-/* LOGIN  */
+/* NAV BAR */
 #home, #login, #mypoll, #newpoll, #username {
 	font-size: 150%;
 }
 
+/* LOGIN  */
+
+
+
 /* HOME */
+
+.useroptions {
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+
+/* POLLS PARTIALS  */
 
 .pollsWidget {
     display: inline-block;
@@ -15,7 +28,7 @@
     margin-left: 20px;
 }
 
-/*new poll*/
+/* NEW POLL */
 
 form {
   margin-top: 50px;
@@ -26,12 +39,9 @@ form {
   width: 615px;
 }
 
-.useroptions {
-  margin-top: 100px;
-  
-  text-align: center;
-}
-
 .new {
   margin-top: 100px;
 }
+
+
+/* MY POLLS  */
