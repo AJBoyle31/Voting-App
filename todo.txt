@@ -32,6 +32,8 @@ set up html for pages
     
     NEED TO ADD CSS
     
+when clicking on different pages, the display name in the nav bar reloads everytime. need to make it so it doesn't.    
+    
 update clickHandler.server.js to handle voting buttons
 
 how do i save the polls in the database? do i create a polls.js similar to users.js?
