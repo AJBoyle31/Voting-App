@@ -3,31 +3,42 @@ figure out what happens when you click login with github
         
 
 set up html for pages
-    login
+    
+    login - 90% DONE, NEED TO MAKE SURE POLLS LOAD ON PAGE LOAD
         a list of all polls
-    home
+    
+    home - 90% DONE, NEED TO UPDATE LINKS TO NEW POLL AND MY POLLS, NEED TO MAKE SURE POLLS LOAD ON PAGE LOAD, NEED DROP DOWN BOX FOR USERNAME IN NAV BAR TO SELECT SIGN OFF OPTION.
         a list of all polls
         links to my polls and new polls
-    my polls
+    
+    my polls - 
         shows all polls made by user
         has a link to make a new poll
-    new poll
+    
+    new poll - SKELETON DONE, NEED TO ADD AESTHETICS
         asks user to enter a poll name in one box
         in a separate box asks user to list the options
-    poll layout
+    
+    poll layout - 
         poll title
         options to vote for
+            options to add a custom option
         submit button to vote
         share on twitter button
         option to delete the poll
         graph displaying poll
-    profile
+    
+    profile - DELETING PROFILE
+    
+    NEED TO ADD CSS
     
 update clickHandler.server.js to handle voting buttons
 
 how do i save the polls in the database? do i create a polls.js similar to users.js?
     added polls.js. not sure completely how to incorporate it
-
+    
+when clicking on a poll to view, need to figure out how to get the page to route to the pages _id. 
+    
             
             
 COMPLETED
