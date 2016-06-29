@@ -57,7 +57,7 @@ module.exports = function (app, passport) {
 	
 	//if you are logged in and want to create a new poll	
 	app.route('/newpoll')
-		.get( function (req, res){
+		.get(isLoggedIn, function (req, res){
 			res.render('newpoll');	
 		});
 		
