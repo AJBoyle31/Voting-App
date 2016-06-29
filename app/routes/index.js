@@ -38,7 +38,7 @@ module.exports = function (app, passport) {
 	//if not logged in, you get the log in page first
 	app.route('/login')
 		.get(function (req, res) {
-			res.render('login');
+			res.render('login', {layout: false});
 		});
 	
 	//logs you out and redirects you to the login page
