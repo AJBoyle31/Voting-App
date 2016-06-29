@@ -1,6 +1,9 @@
-#home, #login {
+/* LOGIN  */
+#home, #login, #mypoll, #newpoll, #username {
 	font-size: 150%;
 }
+
+/* HOME */
 
 .pollsWidget {
     display: inline-block;
@@ -12,6 +15,8 @@
     margin-left: 20px;
 }
 
+/*new poll*/
+
 form {
   margin-top: 50px;
   margin-left: 50px;
@@ -19,4 +24,14 @@ form {
 
 #title {
   width: 615px;
+}
+
+.useroptions {
+  margin-top: 100px;
+  
+  text-align: center;
+}
+
+.new {
+  margin-top: 100px;
 }
